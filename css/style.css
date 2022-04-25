@@ -1,0 +1,575 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav .nav-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+nav .nav-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .links {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+@media (max-width: 744px) {
+  nav .links {
+    display: none;
+  }
+}
+
+nav .links a {
+  text-decoration: none;
+  color: #193767;
+  padding: 0;
+  margin: 0 0.6rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  word-spacing: 2px;
+  font-weight: 600;
+}
+
+nav .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (max-width: 905px) {
+  nav .info .search {
+    display: none;
+  }
+}
+
+@media (max-width: 905px) {
+  nav .info .profile {
+    display: none;
+  }
+}
+
+nav .info .nav-toggle {
+  color: #116cff;
+  background-color: #0867ff;
+  cursor: pointer;
+  display: none;
+}
+
+nav .info .nav-toggle svg {
+  height: 1.7rem;
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (max-width: 905px) {
+  nav .info .nav-toggle {
+    display: contents;
+  }
+}
+
+nav .info .nav-toggle:hover {
+  color: #063251;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+nav .info #right {
+  padding: 0.5rem;
+}
+
+nav .info #right img {
+  height: 6vh;
+  border-radius: 1rem;
+}
+
+.banner {
+  color: white;
+  height: 25vh;
+  background-image: url("../img/bg2.jpg");
+  text-align: center;
+  background-size: cover;
+  padding: 35px 35px;
+}
+
+.add {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.1rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1130px) {
+  .add {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.add .online-anime p {
+  padding-bottom: 1.3rem;
+}
+
+.add .online-anime a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  background-color: #193767;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.5rem;
+}
+
+.add h2 {
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+.add .random-video {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.add .random-video a {
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: chocolate;
+}
+
+.add .random-video .random-1 {
+  text-align: center;
+}
+
+.add .random-video .video-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 5rem;
+}
+
+@media (max-width: 1130px) {
+  .add .random-video .video-1 {
+    height: 8rem;
+  }
+}
+
+.add .random-video .video-1 .video {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.viral {
+  margin-top: 4rem;
+}
+
+.viral .viral-img {
+  height: 14rem;
+}
+
+@media (max-width: 1130px) {
+  .viral .viral-img {
+    height: 15rem;
+  }
+}
+
+.blank {
+  padding: 2rem;
+  border: 0.5px solid rgba(139, 134, 134, 0.452);
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  height: 2rem;
+  background: rgba(25, 55, 100, 0.137);
+}
+
+.popular-container-1 h2, .popular-container-2 h2 {
+  font-size: 1.7em;
+  font-weight: 400;
+  margin: 0.83em 0;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.popular-container-1 .see-popular-anime, .popular-container-2 .see-popular-anime {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popular-container-1 .see-popular-anime button, .popular-container-2 .see-popular-anime button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  color: #193767;
+  background: rgba(25, 55, 100, 0.137);
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 15px 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-top: 2rem;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.popular-container-1 .see-popular-anime button:hover, .popular-container-2 .see-popular-anime button:hover {
+  background-color: #193767;
+  color: white;
+}
+
+.popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  overflow: hidden;
+}
+
+@media (max-width: 1350px) {
+  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1181px) {
+  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1003px) {
+  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 816px) {
+  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 643px) {
+  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.popular-container-1 .popular-anime .img, .popular-container-2 .popular-anime .img {
+  text-align: center;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+}
+
+.popular-container-1 .popular-anime .img h3, .popular-container-2 .popular-anime .img h3 {
+  font-size: .9em;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.popular-container-1 .popular-anime img, .popular-container-2 .popular-anime img {
+  height: 14rem;
+  border-radius: 0.9rem;
+  padding: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.popular-container-2 {
+  background-color: rgba(25, 55, 100, 0.137);
+}
+
+.recommendation-container h2 {
+  font-size: 1.7em;
+  font-weight: 400;
+  margin: 0.83em 0;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.recommendation-container .see-popular-anime {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommendation-container .see-popular-anime button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  color: #193767;
+  background: rgba(25, 55, 100, 0.137);
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 15px 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-top: 2rem;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.recommendation-container .see-popular-anime button:hover {
+  background-color: #193767;
+  color: white;
+}
+
+.recommendation-container .anime-recommendation {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
+
+@media (max-width: 1181px) {
+  .recommendation-container .anime-recommendation {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 816px) {
+  .recommendation-container .anime-recommendation {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.recommendation-container .matching {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+}
+
+.recommendation-container .match {
+  text-align: center;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+}
+
+.recommendation-container .match h3 {
+  font-size: .9em;
+  font-weight: 700;
+  margin: 0rem;
+  margin-bottom: 2.3rem;
+}
+
+.recommendation-container .match .agree {
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  margin: 0.5em auto;
+  background-color: rgba(25, 55, 103, 0.144);
+}
+
+.recommendation-container .match #agree-1 {
+  text-align: end;
+  padding-right: 1rem;
+}
+
+.recommendation-container .match #agree-2 {
+  text-align: start;
+  padding-left: 1rem;
+}
+
+.recommendation-container .user {
+  text-align: center;
+}
+
+.recommendation-container img {
+  height: 12rem;
+  border-radius: 0.9rem;
+  padding: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer {
+  max-width: 1277px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin-bottom: 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+@media (max-width: 905px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer p {
+  margin: 1.6rem;
+}
+
+.footer .fans h2 {
+  font-weight: 100;
+  margin: 1.6rem;
+}
+
+.footer .fans .pateron a {
+  color: white;
+  background-color: #fc5342;
+  padding: 0.7rem;
+}
+
+.footer .social-media .social-icon {
+  margin: 14px;
+  margin-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .social-media .social-icon a {
+  font-size: 2rem;
+  color: #ffffff;
+  background: #193767;
+  margin: 1rem;
+  padding: 0.4rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.footer .social-media .mode {
+  margin: 0.8rem;
+}
+
+.footer .social-media .mode button {
+  background-color: #d8d8d8;
+  padding: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 1rem;
+  border-radius: 0.7rem;
+}
+
+.footer .contact {
+  margin: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.footer .contact a {
+  margin: 0.7rem;
+}
+/*# sourceMappingURL=style.css.map */

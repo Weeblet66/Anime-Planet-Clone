@@ -1,0 +1,518 @@
+$desktop: 1130px;
+$grid1: 1350px;
+$grid2: 1181px;
+$grid3: 1003px;
+$grid4: 816px;
+$grid5: 643px;
+$nav: 905px;
+$nav1: 744px;
+
+@mixin desktop {
+    @media (max-width: #{$desktop}){
+        @content;
+    }
+}
+@mixin grid1 {
+    @media (max-width: #{$grid1}){
+        @content;
+    }
+}
+@mixin grid2 {
+    @media (max-width: #{$grid2}){
+        @content;
+    }
+}
+@mixin grid3 {
+    @media (max-width: #{$grid3}){
+        @content;
+    }
+}
+@mixin grid4 {
+    @media (max-width: #{$grid4}){
+        @content;
+    }
+}
+@mixin grid5 {
+    @media (max-width: #{$grid5}){
+        @content;
+    }
+}
+@mixin nav {
+    @media (max-width: #{$nav}){
+        @content;
+    }
+}
+@mixin nav1 {
+    @media (max-width: #{$nav1}){
+        @content;
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  
+}
+
+nav {
+
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .nav-header{
+        align-items: center;
+       
+    }
+    
+    .links {
+        height: auto;
+        display: flex;
+        list-style: none;
+
+        @include nav1{
+            display: none;
+        }
+
+        a{
+          text-decoration: none;
+          color: #193767;
+          padding: 0;
+          margin: 0 0.6rem;
+          font-size: 1rem;
+          text-transform: capitalize;
+          letter-spacing: 0.1rem;
+          display: block;
+          word-spacing: 2px;
+          font-weight: 600;
+        }
+ 
+    }
+    .info{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+
+        .search{
+            @include nav{
+                display: none;
+            }
+        }
+        .profile{
+            @include nav{
+                display: none;
+            }
+        }
+        .nav-toggle {
+            color: #116cff;
+            background-color: #0867ff;
+            cursor: pointer;
+            display: none;
+            svg{
+                height: 1.7rem;
+                margin-right: 1rem;
+                padding-left: 1rem;
+            }
+            @include nav{
+                display: contents;
+            }
+          }
+          .nav-toggle:hover {
+            color: rgb(6, 50, 81);
+            transform: rotate(90deg);
+          }
+        
+
+        #right{
+            padding: 0.5rem;
+            
+
+            img{
+                height: 6vh;
+                border-radius: 1rem;
+            }
+        }
+    }
+    
+  
+}
+
+.banner{
+    color: white;
+    height: 25vh;
+    background-image: url('../img/bg2.jpg');
+    text-align: center;
+    background-size: cover;
+    padding: 35px 35px;
+}
+
+.add{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0.1rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 3rem;
+
+    @include desktop{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .online-anime{
+        
+        p{
+            padding-bottom: 1.3rem;
+           
+        }
+        a{
+            list-style: none;
+            color: white;
+            text-decoration: none;
+            background-color: #193767;
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0.5rem
+            
+        }
+    }
+
+    h2{
+        font-size: 1.7em;
+        font-weight: 400;
+    }
+.random-video{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+ 
+    // @include desktop{
+    //     display: flex;
+    //     flex-direction: column;
+    //   }
+    
+    a{
+        text-decoration: none;
+        align-items: center;
+        color: chocolate;
+    }
+
+    .random-1{
+       text-align: center;
+       
+    }
+
+    
+    .video-1{
+        display: flex;
+        // height: 9vh;
+        width: 100%;
+        height: 5rem;
+
+        @include desktop{
+            height: 8rem;
+        }
+
+        .video{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+}
+.viral{
+    margin-top: 4rem;
+    // @include desktop{
+    //     display: flex;
+    //     justify-content: center;
+    //     margin-top: 2rem;
+    // }
+    .viral-img{
+        height: 14rem;
+        @include desktop{
+            height: 15rem;
+        }
+    }
+}
+
+.blank{
+    padding: 2rem;
+    border: 0.5px solid rgba(139, 134, 134, 0.452);
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    height: 2rem;
+    background: rgba(25, 55, 100, 0.137);
+
+    // @include desktop{
+    //     margin-left: 0rem;
+    //     margin-right: 0rem;
+    //     width: 100%;
+       
+    // }
+}
+
+.popular-container-1, .popular-container-2{
+    
+    h2{
+        font-size: 1.7em;
+        font-weight: 400;
+        margin: 0.83em 0;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .see-popular-anime{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      
+        button{
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 14px;
+            font-weight: 700;
+            border: none;
+            color: #193767;
+            background: rgba(25, 55, 100, 0.137);
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 15px 32px;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 2rem;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        button:hover{
+            background-color: #193767;
+            color: white;
+        }
+    }
+    .popular-anime{
+        margin-left: 4rem;
+        margin-right: 4rem;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        overflow: hidden;
+
+        @include grid1{
+            grid-template-columns: repeat(6, 1fr);
+        }
+        @include grid2{
+            grid-template-columns: repeat(5, 1fr);
+        }
+        @include grid3{
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include grid4{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include grid5{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .img{
+            text-align: center;
+            grid-column-end: span 1;
+            h3{
+                font-size: .9em;
+                font-weight: 700;
+                margin: 1rem;
+            }
+        }
+
+        img{
+            height: 14rem;
+            border-radius: 0.9rem;
+            padding: 0.5rem;
+            object-fit: cover;
+        }
+    }
+}
+
+.popular-container-2{
+    background-color: rgba(25, 55, 100, 0.137);
+}
+
+.recommendation-container{
+    h2{
+        font-size: 1.7em;
+        font-weight: 400;
+        margin: 0.83em 0;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .see-popular-anime{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      
+        button{
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 14px;
+            font-weight: 700;
+            border: none;
+            color: #193767;
+            background: rgba(25, 55, 100, 0.137);
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 15px 32px;
+            align-items: center;
+            cursor: pointer;
+            margin-top: 2rem;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        button:hover{
+            background-color: #193767;
+            color: white;
+        }
+    }
+    .anime-recommendation{
+        margin-left: 4rem;
+        margin-right: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow: hidden;
+
+        @include grid2{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include grid4{
+            grid-template-columns: repeat(1, 1fr);
+        }
+   
+    }
+    .matching{
+        display: flex;
+        margin: 2rem;
+    }
+    .match{
+        text-align: center;
+        grid-column-end: span 1;
+        h3{
+            font-size: .9em;
+            font-weight: 700;
+            margin: 0rem;
+            margin-bottom: 2.3rem;
+        }
+        .agree{
+            border-radius: 0.2rem;
+            padding: 0.4rem;
+            margin: 0.5em auto;
+            background-color: rgba(25, 55, 103, 0.144);
+        }
+        #agree-1{
+            text-align: end;
+            padding-right: 1rem;
+        }
+        #agree-2{
+            text-align: start;
+            padding-left: 1rem;
+        }
+    }
+    .user{
+        text-align: center;
+    }
+
+    img{
+        height: 12rem;
+        border-radius: 0.9rem;
+        padding: 0.5rem;
+        object-fit: cover;
+    }
+}
+
+.footer{
+    max-width: 1277px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 2rem;
+    flex-direction: row;
+    transition: all 1s ease-out;
+
+    @include nav{
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 1s ease-out;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    p{
+        margin: 1.6rem;
+    }
+
+    .fans{
+
+        h2{
+            font-weight: 100;
+            margin: 1.6rem;
+        }
+        .pateron{
+            a{
+                color: white;
+                background-color: #fc5342;
+                padding: 0.7rem;
+            }
+        }
+    }
+    .social-media{
+      
+        
+        .social-icon{
+            margin: 14px;
+            margin-top: 2vh;
+            display: flex;
+            font-size: 5vw;
+            justify-content: center;
+         
+            a{
+                font-size: 2rem;
+                color: #ffffff;
+                background: #193767;
+                margin: 1rem;
+                padding: 0.4rem;
+                text-align: center;
+                justify-content: center;
+                border-radius: 0.3rem;
+                padding-left: 0.6rem;
+                padding-right: 0.6rem;
+            }
+        }
+        .mode{
+            margin: 0.8rem;
+            button{
+                background-color: #d8d8d8;
+                padding: 0.8rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                margin: 1rem;
+                border-radius: 0.7rem;
+            }
+        }
+    }
+    .contact{
+        margin: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        a{
+            margin: 0.7rem;
+        }
+    }
+}
+
