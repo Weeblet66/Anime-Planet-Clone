@@ -4,6 +4,7 @@ $grid2: 1181px;
 $grid3: 1003px;
 $grid4: 816px;
 $grid5: 643px;
+$img: 467px;
 $nav: 905px;
 $nav1: 744px;
 
@@ -34,6 +35,11 @@ $nav1: 744px;
 }
 @mixin grid5 {
     @media (max-width: #{$grid5}){
+        @content;
+    }
+}
+@mixin img {
+    @media (max-width: #{$img}){
         @content;
     }
 }
@@ -219,6 +225,9 @@ nav {
         @include desktop{
             height: 8rem;
         }
+        @include nav1{
+            height: 4rem;
+        }
 
         .video{
             padding-left: 0.5rem;
@@ -238,8 +247,12 @@ nav {
     .viral-img{
         height: 14rem;
         @include desktop{
-            height: 15rem;
+            height: 25rem;
         }
+        @include desktop{
+            height: 12rem;
+        }
+        
     }
 }
 
@@ -296,7 +309,7 @@ nav {
             color: white;
         }
     }
-    .popular-anime{
+    .popular-anime, .popular-manga{
         margin-left: 4rem;
         margin-right: 4rem;
         display: grid;
@@ -334,6 +347,9 @@ nav {
             border-radius: 0.9rem;
             padding: 0.5rem;
             object-fit: cover;
+            @include img{
+                height: 10rem;
+            }
         }
     }
 }
@@ -377,7 +393,7 @@ nav {
             color: white;
         }
     }
-    .anime-recommendation{
+    .anime-recommendation, .manga-recommendation{
         margin-left: 4rem;
         margin-right: 4rem;
         display: grid;
@@ -392,7 +408,8 @@ nav {
         }
    
     }
-    .matching{
+    
+    .matching {
         display: flex;
         margin: 2rem;
     }
@@ -404,6 +421,10 @@ nav {
             font-weight: 700;
             margin: 0rem;
             margin-bottom: 2.3rem;
+            padding: 1rem;
+            max-width: 12rem;
+          
+            
         }
         .agree{
             border-radius: 0.2rem;
@@ -429,8 +450,12 @@ nav {
         border-radius: 0.9rem;
         padding: 0.5rem;
         object-fit: cover;
+        @include img{
+            height: 8rem;
+        }
     }
 }
+
 
 .footer{
     max-width: 1277px;

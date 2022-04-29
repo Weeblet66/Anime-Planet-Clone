@@ -197,6 +197,12 @@ nav .info #right img {
   }
 }
 
+@media (max-width: 744px) {
+  .add .random-video .video-1 {
+    height: 4rem;
+  }
+}
+
 .add .random-video .video-1 .video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -212,7 +218,13 @@ nav .info #right img {
 
 @media (max-width: 1130px) {
   .viral .viral-img {
-    height: 15rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 1130px) {
+  .viral .viral-img {
+    height: 12rem;
   }
 }
 
@@ -272,7 +284,7 @@ nav .info #right img {
   color: white;
 }
 
-.popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+.popular-container-1 .popular-anime, .popular-container-1 .popular-manga, .popular-container-2 .popular-anime, .popular-container-2 .popular-manga {
   margin-left: 4rem;
   margin-right: 4rem;
   display: -ms-grid;
@@ -283,58 +295,64 @@ nav .info #right img {
 }
 
 @media (max-width: 1350px) {
-  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+  .popular-container-1 .popular-anime, .popular-container-1 .popular-manga, .popular-container-2 .popular-anime, .popular-container-2 .popular-manga {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
   }
 }
 
 @media (max-width: 1181px) {
-  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+  .popular-container-1 .popular-anime, .popular-container-1 .popular-manga, .popular-container-2 .popular-anime, .popular-container-2 .popular-manga {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
   }
 }
 
 @media (max-width: 1003px) {
-  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+  .popular-container-1 .popular-anime, .popular-container-1 .popular-manga, .popular-container-2 .popular-anime, .popular-container-2 .popular-manga {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 816px) {
-  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+  .popular-container-1 .popular-anime, .popular-container-1 .popular-manga, .popular-container-2 .popular-anime, .popular-container-2 .popular-manga {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 643px) {
-  .popular-container-1 .popular-anime, .popular-container-2 .popular-anime {
+  .popular-container-1 .popular-anime, .popular-container-1 .popular-manga, .popular-container-2 .popular-anime, .popular-container-2 .popular-manga {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.popular-container-1 .popular-anime .img, .popular-container-2 .popular-anime .img {
+.popular-container-1 .popular-anime .img, .popular-container-1 .popular-manga .img, .popular-container-2 .popular-anime .img, .popular-container-2 .popular-manga .img {
   text-align: center;
   -ms-grid-column-span: 1;
       grid-column-end: span 1;
 }
 
-.popular-container-1 .popular-anime .img h3, .popular-container-2 .popular-anime .img h3 {
+.popular-container-1 .popular-anime .img h3, .popular-container-1 .popular-manga .img h3, .popular-container-2 .popular-anime .img h3, .popular-container-2 .popular-manga .img h3 {
   font-size: .9em;
   font-weight: 700;
   margin: 1rem;
 }
 
-.popular-container-1 .popular-anime img, .popular-container-2 .popular-anime img {
+.popular-container-1 .popular-anime img, .popular-container-1 .popular-manga img, .popular-container-2 .popular-anime img, .popular-container-2 .popular-manga img {
   height: 14rem;
   border-radius: 0.9rem;
   padding: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 467px) {
+  .popular-container-1 .popular-anime img, .popular-container-1 .popular-manga img, .popular-container-2 .popular-anime img, .popular-container-2 .popular-manga img {
+    height: 10rem;
+  }
 }
 
 .popular-container-2 {
@@ -387,7 +405,7 @@ nav .info #right img {
   color: white;
 }
 
-.recommendation-container .anime-recommendation {
+.recommendation-container .anime-recommendation, .recommendation-container .manga-recommendation {
   margin-left: 4rem;
   margin-right: 4rem;
   display: -ms-grid;
@@ -398,14 +416,14 @@ nav .info #right img {
 }
 
 @media (max-width: 1181px) {
-  .recommendation-container .anime-recommendation {
+  .recommendation-container .anime-recommendation, .recommendation-container .manga-recommendation {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 816px) {
-  .recommendation-container .anime-recommendation {
+  .recommendation-container .anime-recommendation, .recommendation-container .manga-recommendation {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
@@ -429,6 +447,8 @@ nav .info #right img {
   font-weight: 700;
   margin: 0rem;
   margin-bottom: 2.3rem;
+  padding: 1rem;
+  max-width: 12rem;
 }
 
 .recommendation-container .match .agree {
@@ -458,6 +478,12 @@ nav .info #right img {
   padding: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 467px) {
+  .recommendation-container img {
+    height: 8rem;
+  }
 }
 
 .footer {
